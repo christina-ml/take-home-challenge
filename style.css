@@ -1,0 +1,164 @@
+/* navbar */
+.nav {
+  background-color: #cbe;
+  padding: 20px;
+  text-align: center;
+}
+
+#my-name {
+    font-family: "Courier New";
+}
+
+/* nav header color */
+#nav-header {
+  color: purple;
+    font-family: "Lucida Handwriting";
+}
+
+/* nav items */
+/* using CSS grid to make the nav items spaced apart in the same row */
+.nav-list {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 50px;
+  
+  /* list items spaced evenly in 1 row using fr unit */
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "about fun resources workshop";
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "Courier New";
+ background-color: #cce;
+  padding: 5px;
+  border: 3px dotted yellow;
+}
+
+/* instructions */
+.instructions {
+  padding: 10px;
+  background-color: #adc;
+  text-align: left;
+}
+
+/* divider */
+.solid {
+  border-top: 1px solid #eee;
+}
+
+/* begin main content */
+/* cat image #1 */
+#cat-computer {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border: 6px double green;
+}
+
+/*  about me  */
+.about-me {
+  color: #000;
+}
+
+/* about info */
+#about-info {
+  border: 1px solid blue;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* email link */
+#email-link {
+  background-color: #adc;
+}
+
+/* begin fun fact */
+/* fun fact header */
+#fun-header {
+  border: 3px dotted;
+  border-color: red green blue green;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* fun fact */
+.fun-fact {
+  color: orchid;
+  border: 1px solid blue;
+  padding: 10px;
+}
+  
+/* cat image 2 */
+.cat-hand-image {
+  margin-top: 10px;
+  text-align: center;
+  background: pink;
+  background-image: url(https://i.imgur.com/AQPrZNu.png);
+  background-size: cover;
+}
+
+#cat-hand {
+  width: 200px;
+  height: auto;
+  padding: 5px 20px;
+  background: salmon;
+  background-image: url(https://i.imgur.com/EvHML3y.jpg);
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* begin workshop codepens section */
+/* Using CSS grid to create 2 columns and 1 row for layout*/
+.workshop {
+    display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "left right";
+  margin-bottom: 10px;
+}
+
+.workshop-section {
+  background-color: orchid;
+
+}
+
+/* My codepens links */
+.my-codepens {
+    background-color: lavender;
+  grid-area: "left";
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.more-codepens {
+  background-color: pink;
+  grid-area: "right";
+  margin-left: 5px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/* back to top */
+.back-to-top {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px;
+  background-color: #eee;
+  float: right;
+}
+
+/* footer */
+.footer {
+  background-color: #cbe;
+  height: 30px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
